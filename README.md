@@ -1,8 +1,8 @@
 **Evaluation of uncertainty quantification to reduce False Positives and the relationship between Bayesian approach to deep learning models and their capacity**
 
-Files developed to the work in [here]()
+Files developed to the work (preprint) in [here](https://www.techrxiv.org/articles/preprint/Improving_Performance_and_Quantifying_Uncertainty_of_Body-Rocking_Detection_using_Bayesian_Neural_Networks/16779301)
 
-**Intructions to reproduce the results**
+**Instructions to reproduce the results**
 
 * Download this repo in order to have the same file structure.
 
