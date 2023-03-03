@@ -121,10 +121,10 @@ if platform.system() != 'Windows':
     orig_path = r'RockingMotion/Journal/ESDB_dataset'
     load_model_path = r'RockingMotion/Journal/src'
 else:
-    load_model_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\transferlearning_ESDB_equipped_3'
-    orig_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\EDAQA_dataset'
-    output_study1 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\Study1'
-    output_study2 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\Study2'
+    load_model_path = r'C:\path\to\model_weights'
+    orig_path = r'C:\original\dataset\path\EDAQA_dataset'
+    output_study1 = r'C:\path\to\new\Study1'
+    output_study2 = r'C:\path\to\new\Study2'
 
 data_file_name = 'torso_100_mw.mat'
 data_study1, data_study2, labels_study1, labels_study2 = load_session_EDAQA(orig_path)
