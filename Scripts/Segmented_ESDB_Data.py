@@ -61,8 +61,8 @@ if platform.system() != 'Windows':
     orig_path = r'RockingMotion/Journal/ESDB_dataset'
     load_model_path = r'RockingMotion/Journal/src'
 else:
-    load_model_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\transferlearning_ESDB_equipped_3'
-    orig_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\ESDB_dataset'
+    load_model_path = r'C:\to\path\model_weights'
+    orig_path = r'C:\path\to\ESDB_dataset'
 
 data_file_name = 'Arm_100_resamp.mat'
 data, labels = load_session_ESDB(orig_path, data_file_name)

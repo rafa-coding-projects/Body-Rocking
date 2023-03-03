@@ -478,11 +478,11 @@ else:
     roc_approach = ['ROC Sadouk Original Approach', 'ROC Bayesian Approach', 'Comparison Sadouk vs Bayesian']
 
 if platform.system() != 'Windows':
-    orig_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_sadouk'
+    orig_path = r'C:\path\to\src\bayes_approach_sadouk'
     load_model_path = r'RockingMotion/Journal/src'
 else:
-    load_model_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\transferlearning_ESDB_equipped_3'
-    orig_path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_'+ author
+    load_model_path = r'C:\path\to\src\transferlearning_ESDB_equipped_3'
+    orig_path = r'C:\path\to\src\bayes_approach_'+ author
 
 if 'ESDB' not in author:
     session = 'Subj.:'

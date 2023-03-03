@@ -13,12 +13,12 @@ author5 = r'nastaran\Boxuan_ESDB_widernet8x_dense128_utopic'
 author6 = r'nastaran\Boxuan_ESDB_widernet8x_dense128'
 author7 = r'nastaran\Boxuan_ESDB_widernet8x_dense128'
 
-orig_path0 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author0
-orig_path1 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author1
-orig_path2 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author2
-orig_path3 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author3
-orig_path4 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author4
-orig_path5 = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\src\bayes_approach_' + author5
+orig_path0 = r'C:\path\to\src\bayes_approach_' + author0
+orig_path1 = r'C:\path\to\src\bayes_approach_' + author1
+orig_path2 = r'C:\path\to\src\bayes_approach_' + author2
+orig_path3 = r'C:\path\to\src\bayes_approach_' + author3
+orig_path4 = r'C:\path\to\src\bayes_approach_' + author4
+orig_path5 = r'C:\path\to\src\bayes_approach_' + author5
 
 # roc_approach = ['ROC Sadouk Original Approach', 'ROC Bayesian Approach', 'Comparison Sadouk vs Bayesian']
 # roc_approach0 = ['ROC Rad Original Approach', 'ROC Bayesian Approach', 'Comparison Rad vs Bayesian']
@@ -127,16 +127,16 @@ plt.show(block=False)
 plt.pause(0.001)
 #manager = plt.get_current_fig_manager()
 #manager.window.showMaximized()
-fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+fig.savefig(os.path.join( r'C:\path\to',
                           'bestmodels.png'))
-fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+fig.savefig(os.path.join( r'C:\path\to',
                           'bestmodels.eps'))
-# fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+# fig.savefig(os.path.join( r'C:\path\to',
 #                           author.split('\\')[-1] + '_' + author1.split('\\')[-1] + '_' + author2.split('\\')[-1] + '.png'))
-# fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+# fig.savefig(os.path.join( r'C:\path\to',
 #                           author.split('\\')[-1] + '_' + author1.split('\\')[-1] + '_' + author2.split('\\')[-1] + '.eps'))
-# fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+# fig.savefig(os.path.join( r'C:\path\to',
 #                           author.split('\\')[-1] + '_' + author1.split('\\')[-1] + '_' + author2.split('\\')[-1] + '_' + author3.split('\\')[-1] + '.png'))
-# fig.savefig(os.path.join( r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking',
+# fig.savefig(os.path.join( r'C:\path\to',
 #                           author.split('\\')[-1] + '_' + author1.split('\\')[-1] + '_' + author2.split('\\')[-1] + '_' + author3.split('\\')[-1] + '.eps'))
 plt.close(fig)
