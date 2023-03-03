@@ -8,7 +8,6 @@ Files developed to the work [here](https://www.mdpi.com/2078-2489/13/7/338) with
 
 * Run the model
   
-  * Go to Scripts folder
   * In order to run one experiment, run the following command:
     
     ```bash
