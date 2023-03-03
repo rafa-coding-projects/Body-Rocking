@@ -2,7 +2,7 @@
 '''
 Code originally written by:
 
-@author: Nastaran Mohammadian Rad <Email: nastaran@fbk.eu>
+@author: RadModel Mohammadian Rad <Email: RadModel@fbk.eu>
 Paper: "Stereotypical Motor Movement Detection in Dynamic Feature Space"
 To reproduce the results of the Static-Features-Unbalanced and Static-Features-Balanced experiments on the simulated data.
 
@@ -90,7 +90,7 @@ except:
     print('Nothing here')
     BNN_ison = True
 
-# Choose model 0 - Nastaran, 1 - Boxuan
+# Choose model 0 - RadModel, 1 - WiderNet
 model_id = 1
 # 0 - ESDB dataset (1 subject, broken up into 7 session variables), 1 - EDAQA dataset (6 subjects), 2 - Simulated
 choose_dataset = 0
@@ -103,36 +103,36 @@ if choose_dataset == 0:
     print('ooooo Using ESDB Dataset ooooooo')
     if platform.system() != 'Windows':
         # set the output and input paths
-        path = r'/home/rdasilv2/RockingMotion/Journal/ESDB_dataset'
-        savePath = r'/home/rdasilv2/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'/path/tomylinux/ESDB_dataset'
+        savePath = r'/path/tomylinux/Results/'  # save the results of unbalanced-CNN
     else:
         # set the output and input paths
-        path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\ESDB_dataset'
-        savePath = r'C:/Users/rdasilv2/PycharmProjects/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'C:/path/tomywindows/ESDB_dataset'
+        savePath = r'C:/path/tomywindows/Results/'  # save the results of unbalanced-CNN
 elif choose_dataset == 1:
     subNum = 6
     subjects = ["subject0", "subject1", "subject2", "subject3", "subject4", "subject5"]
     print('ooooo Using EDAQA Dataset ooooooo')
     if platform.system() != 'Windows':
         # set the output and input paths
-        path = r'/home/rdasilv2/RockingMotion/Journal/Study1_old'
-        savePath = r'/home/rdasilv2/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'/path/tomylinux/Study1_old'
+        savePath = r'/path/tomylinux/Results/'  # save the results of unbalanced-CNN
     else:
         # set the output and input paths
-        path = r'C:\Users\rdasilv2\Gdrive\Backup Rafael\Documents\NC State\Research Related\ML and DSP\Proj - Body Rocking\Study1'
-        savePath = r'C:/Users/rdasilv2/PycharmProjects/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'C:/path/tomywindows/Study1'
+        savePath = r'C:/path/tomywindows/Results/'  # save the results of unbalanced-CNN
 elif choose_dataset == 2:
     subNum = 5
     subjects = ["subject1", "subject2", "subject3", "subject4", "subject5"]
     print('ooooo Using Simulated Dataset ooooooo')
     if platform.system() != 'Windows':
         # set the output and input paths
-        path = r'/home/rdasilv2/CNN_paper/Results/Intermediate_files/'
-        savePath = r'/home/rdasilv2/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'/path/tomylinux/Results/Intermediate_files/'
+        savePath = r'/path/tomylinux/Results/'  # save the results of unbalanced-CNN
     else:
         # set the output and input paths
-        path = r'C:/Users/rdasilv2/PycharmProjects/CNN_paper/Results/Intermediate_files/'
-        savePath = r'C:/Users/rdasilv2/PycharmProjects/CNN_paper/Results/'  # save the results of unbalanced-CNN
+        path = r'/path/tomywindows/Results/Intermediate_files/'
+        savePath = r'/path/tomywindows/Results/'  # save the results of unbalanced-CNN
 
 print('ioioioioioioioioiioioioioioioioioioioioioioioioioioi')
 print(path)
@@ -168,7 +168,6 @@ roc_auc = dict()
 study = 'Simulated_'
 temp_X = []
 temp_Y = []
-
 
 
 # reading data
